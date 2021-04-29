@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sg 'mvn clean test'
+                sh 'mvn clean test'
             }
         }
         stage('Install') {
             steps {
-                sg 'mvn install'
+                sh 'mvn install'
             }
         }
     }
